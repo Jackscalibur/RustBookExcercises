@@ -17,6 +17,14 @@ fn main() {
         .read_line(&mut guess)
         .expect("Failed to read line.");
 
+    let guess: u32 = match guess.trim().parse() {
+        Ok(num) => num,
+        Err(_) => {
+            println!("Please enter a valid number.");
+            return; // Exit the program if parsing fails
+        }
+    };
+
     println!("You guessed: {guess}");
 
     // `guess` needs to be converted to an Integer type
@@ -25,4 +33,6 @@ fn main() {
         Ordering::Greater => println!("Too big!"),
         Ordering::Equal => println!("You win!"),
     }
+
+    println!("The secret number was {secret_number}");
 }
