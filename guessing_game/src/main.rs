@@ -27,7 +27,6 @@ fn main() {
 
     println!("You guessed: {guess}");
 
-    // `guess` needs to be converted to an Integer type
     match guess.cmp(&secret_number) {
         Ordering::Less => println!("Too small!"),
         Ordering::Greater => println!("Too big!"),
