@@ -7,6 +7,10 @@ fn main() {
 
     let secret_number = rand::thread_rng().gen_range(1..=100);
 
+    // This will let the user guess as many times as needed
+    loop {
+        // !!! Put main logic inside of loop !!!
+    }
     println!("Please input your guess.");
 
     let mut guess = String::new();
