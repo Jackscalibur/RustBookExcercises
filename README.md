@@ -8,7 +8,11 @@ It's an easy way to reference the final code examples of what you might see whil
 
 ## Installation
 
-If you want to work with my examples, you can run the `git clone https://github.com/Jackscalibur/RustBookExcercises.git` command in the directory of your choosing.
+If you want to work with my examples, you can run the following command in the directory of your choosing:
+
+```
+git clone https://github.com/Jackscalibur/RustBookExcercises.git
+```
 
 ## License
 
